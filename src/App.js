@@ -13,6 +13,7 @@ firebase.initializeApp({
   
 //add your firebase config here :)))
 
+
 })
 
 const auth = firebase.auth();
@@ -27,10 +28,10 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Chats For Cats</h1>
-        <SignOut />
+        <h1 className=" mx-auto font-bold text-2xl font-serif text-white bg-gray-700 w-full h-full inline-block py-6 border">Chats For Cats</h1>
+        
+      <SignOut />
       </header>
-
       <section>
         {user ? <ChatRoom /> : <SignIn />}
       </section>
@@ -48,7 +49,7 @@ function SignIn() {
 
   return (
     <>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
+      <button className="sign-in border border-cyan-500 " onClick={signInWithGoogle}>Sign in with Google</button>
       
     </>
   )
@@ -57,7 +58,7 @@ function SignIn() {
 
 function SignOut() {
   return auth.currentUser && (
-    <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
+    <button className="bg-blue-400 text-xl font-serif h-20 border border-solid" onClick={() => auth.signOut()}>Sign Out</button>
   )
 }
 
@@ -115,7 +116,7 @@ function ChatMessage(props) {
 
   return (<>
     <div className={`message ${messageClass}`}>
-      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} alt="message" />
+      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} alt="message"/>
       <p>{text}</p>
     </div>
   </>)

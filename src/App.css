@@ -1,6 +1,6 @@
 body {
   background-color: #a6a6d7;
-  background-image: url(./bg-image2.jpg);
+  background-image: url(./cats.jpg);
   background-size: cover;
 }
 
@@ -11,20 +11,21 @@ body {
 }
 
 .App header {
-  background-color: #181717;
-  height: 10vh;
-  min-height: 50px;
-  color: white;
+
+ 
+
+  color: rgb(8, 5, 0);
   position: fixed;
   width: 100%;
   max-width: 728px;
-  top: 0;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 99;
+  z-index: 0;
   padding: 10px;
-  box-sizing: border-box;
+
+  
 }
 
 .App section {
@@ -33,7 +34,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   background-color: rgb(36, 46, 105);
-  background-image: url(./cats2.jpg);
+  background-image: url(./cats.jpg);
   background-size: cover;
 }
 
@@ -51,11 +52,11 @@ main::-webkit-scrollbar {
 }
 
 main::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: transparent;
 }
 
 main::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: transparent;
 }
 
 form {
@@ -90,15 +91,15 @@ input {
 }
 
 button {
-  background-color: #282c34; /* Green */
-  border: none;
+  background-color: #dbdc76; /* Green */
+  
   color: white;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
+  
   cursor: pointer;
-  font-size: 1.25rem;
+  
 }
 
 button:disabled {
@@ -108,10 +109,14 @@ button:disabled {
 
 
 .sign-in {
-  color: #282c34;
-  background: white;
+  color: #ffffff;
+  background:transparent;
   max-width: 400px;
-  margin: 0 auto;
+  margin:auto;
+  font-weight: bolder;
+  margin-bottom: 40px;
+  background-color: #1075bd;
+  border-radius: 30px;
 }
 
 
@@ -163,3 +168,4 @@ img {
 .guidelines {
   text-align: center;
 }
+
